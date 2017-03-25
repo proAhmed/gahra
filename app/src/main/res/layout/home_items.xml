@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/login_title"
+        android:layout_marginTop="60dp"
+        android:background="#EEEEF0"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+        <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="350dp"
+          android:layout_centerHorizontal="true"
+           android:src="@drawable/shoes"
+            android:id="@+id/imgProduct" />
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:orientation="vertical"
+              android:background="#90857C75">
+              <TextView
+                  android:id="@+id/tvStart"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="18sp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginTop="4dp"
+                  android:text="start   25/1/2017"
+                  android:textColor="#fff"/>
+
+              <TextView
+                  android:id="@+id/tvEnd"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="18sp"
+                  android:layout_marginLeft="15dp"
+                  android:text="end   3/3/2017"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginTop="8dp"
+                  android:textColor="#fff"/>
+          </LinearLayout>
+            <ImageView
+                android:id="@+id/imgFav"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/favorite_icon_2"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--android:src="@drawable/images"-->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="15dp"
+        android:elevation="4dp"
+        />
+</RelativeLayout>

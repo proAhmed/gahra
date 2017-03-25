@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc"
+    tools:context="com.gahra.ahmed.gahra.start.MapActivity">
+    <RelativeLayout
+        android:id="@+id/reSelectCity"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/select_city">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:text="Select Your City"/>
+    </RelativeLayout>
+<ImageView
+    android:id="@+id/imgMap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:layout_centerVertical="true"
+    android:src="@drawable/maps"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:lineSpacingExtra="3dp"
+        android:gravity="center_horizontal"
+        android:text="NOW IN AL JAHRA \n SOON IN THE REST OF THE CITIES OF KUWAIT"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>
